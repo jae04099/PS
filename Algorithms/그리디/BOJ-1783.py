@@ -1,3 +1,13 @@
-a, s = map(int, input().split())
+import sys
+n, m = map(int, sys.stdin.readline().split())
 
-while 0 <= nite[0] < a and 0 <= nite[1] < b:
+if n == 1:
+    print(1)
+elif n == 2:
+    print(min(4, (m + 1) // 2))
+elif n >= 3:
+    if m <= 6:
+        print(min(4, m))
+    else:
+        print(m - 2)
+
