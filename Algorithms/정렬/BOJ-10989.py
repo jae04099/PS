@@ -6,11 +6,11 @@
 #     print(i)
 
 import sys
-N = int(input())
-cnt_list = [0] * 10001
-
-for i in range(N):
-    cnt_list[int(input())] += 1
-
+n = int(sys.stdin.readline())
+lists = [0] * 10001
+for i in range(n):
+    lists[int(sys.stdin.readline())] += 1
 for i in range(10001):
-    sys.stdout.write('%s\n' % i * cnt_list[i])
+    if lists[i] != 0:
+        for j in range(lists[i]):
+            print(i)
