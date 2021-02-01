@@ -8,6 +8,7 @@
 # print(tenlist)
 
 ##정석
-n = input()
-for i in range(0, len(n), 10):
-    print(n[i:i+10])
+# s = input()
+# for i in range(0, len(s), 10):
+#     print(s[i:i+10])
+
