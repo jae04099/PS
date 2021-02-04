@@ -2,7 +2,7 @@ from itertools import combinations
 
 def gcd(x, y):
     while y:
-        x, y = y , (x % y)
+        x, y = y, (x % y)
     return x
 
 n = int(input())
@@ -17,8 +17,3 @@ for _ in range(n):
         result += gcd(i[0], i[1])
     print(result)
     result = 0
-
-        
-lists = sorted(lists)
-for i in range(i, len(lists)):
-    result += gcd(lists[])
