@@ -6,4 +6,8 @@
 #     tens += int(n[i]) * math.pow(2, len(n) - i - 1)
 # print(int(tens))
 
+# print(oct(int(input(), 2))[2:])
+
 print(oct(int(input(), 2))[2:])
+print(format((int(input(), 2)), 'o'))
+
