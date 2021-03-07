@@ -1,0 +1,25 @@
+n = 3
+lost = [3]
+reserve = [1]
+set_reserve = set(reserve) - set(lost)
+set_lost = set(lost) - set(reserve)
+for i in set_reserve:
+    if i-1 in set_lost:
+        set_lost.remove(i-1)
+    elif i+1 in set_lost:
+        set_lost.remove(i + 1)
+print(n - len(set_lost))
+
+# def solution(n, lost, reserve):
+#     n -= (len(lost) + len(reserve))
+
+#     answer = 0
+
+#     for i in range(len(lost)):
+#         for j in range(len(reserve)):
+#             if lost[i] == reserve[j]:
+#                 answer += 1
+#             elif lost[i] + 1 == reserve[j] or lost[i] + 1 == reserve[j]:
+#                 answer += 1
+#     answer += len(reserve) + n
+#     return answer

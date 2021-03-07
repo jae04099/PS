@@ -1,2 +1,2 @@
-n = int(input())
-d = [0] * (10 ** (n))
+for i in range(strNum + 1):
+#     dp[i] = max()
