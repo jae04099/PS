@@ -9,6 +9,6 @@ def dp(n):
             zero.append(zero[i - 1] + zero[i - 2])
             one.append(one[i - 1] + one[i + 2])
     print("%d %d"%(zero[n], one[n]))
-for i in range(a):
+for i in range(t):
     k = int(input())
     dp(k)
