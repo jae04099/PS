@@ -1,4 +1,6 @@
 n = int(input())
-d = [0]
+w = [0]
 for i in range(n):
-    d.append(int(input()))
+    w.append(int(input()))
+dp = [0]
+dp.append(w[1])
