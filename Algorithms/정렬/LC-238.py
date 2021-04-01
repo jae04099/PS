@@ -1,16 +1,20 @@
-from math import gcd
+# import math
+# nums = [-1,1,0,-3,3]
+# res = [0] * len(nums)
+# for i in range(len(nums)):
+#     fakenums = nums.copy()
+#     del fakenums[i]
+#     res[i] = math.prod(fakenums)
+# print(res)
 
-def solution(arr):
-    def lcm(x, y):
-        return x*y // gcd(x, y)
-        
-    while True:
-        arr.append(lcm(arr.pop(), arr.pop()))
-        if len(arr) == 1:
-        return arr[0]
-
-
-nums = [1, 2, 3, 4]
-result = []
+nums = [-1, 1, 0, -3, 3]
+p = 1
+output = []
 for i in range(len(nums)):
-    
+    output.append(p)
+    p = p * nums[i]
+p = 1
+for i in range(n - 1,  -1, -1):
+    output[i] = output[i] * p
+    p = p * nums[i]
+print(output)
