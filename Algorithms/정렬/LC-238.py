@@ -7,14 +7,30 @@
 #     res[i] = math.prod(fakenums)
 # print(res)
 
+# nums = [-1, 1, 0, -3, 3]
+# p = 1
+# output = []
+# for i in range(len(nums)):
+#     output.append(p)
+#     p = p * nums[i]
+# p = 1
+# for i in range(n - 1,  -1, -1):
+#     output[i] = output[i] * p
+#     p = p * nums[i]
+# print(output)
+
 nums = [-1, 1, 0, -3, 3]
 p = 1
-output = []
+right, left = [], []
 for i in range(len(nums)):
-    output.append(p)
+    left.append(p)
     p = p * nums[i]
 p = 1
-for i in range(n - 1,  -1, -1):
-    output[i] = output[i] * p
+for i in range(len(nums) - 1, -1, -1):
+    right.append(p)
     p = p * nums[i]
-print(output)
+right.reverse()
+
+for i in range(len(nums)):
+    left[i] = left[i] * right[i]
+print(left)
