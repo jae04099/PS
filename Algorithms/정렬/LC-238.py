@@ -20,8 +20,9 @@
 # print(output)
 
 nums = [-1, 1, 0, -3, 3]
-p = 1
 right, left = [], []
+p = 1
+
 for i in range(len(nums)):
     left.append(p)
     p = p * nums[i]
@@ -32,5 +33,5 @@ for i in range(len(nums) - 1, -1, -1):
 right.reverse()
 
 for i in range(len(nums)):
-    left[i] = left[i] * right[i]
-print(left)
+    right[i] = right[i] * left[i]
+print(right)
