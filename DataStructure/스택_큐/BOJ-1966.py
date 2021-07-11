@@ -24,9 +24,9 @@
 test_cnt = int(input())
 
 for i in range(test_cnt):
-    n, m = map(int, input().split())
-    imp = map(int, input().split())
-    idx = list(int(range(len(imp))))
+    n, m = list(map(int, input().split()))
+    imp = list(map(int, input().split()))
+    idx = list(range(len(imp)))
     idx[m] = 'target'
 
     order = 0
