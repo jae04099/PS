@@ -6,7 +6,11 @@ function answer(x, y) {
 
   // 코드 구현 시작 영역
 
-  // …
+  if(x < y){
+    min = x
+  }else{
+    min = y
+  }
 
   // 코드 구현 종료 영역
 

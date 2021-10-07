@@ -6,7 +6,11 @@ function answer(year) {
 
   // 코드 구현 시작 영역
 
-  // …
+  if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
+    result = true
+  }else{
+    result = false
+  }
 
   // 코드 구현 종료 영역
 

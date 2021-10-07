@@ -13,6 +13,9 @@ function answer(str) {
   );
   let day;
 
+  let dayOfWeek = new Date(str).getDay()
+  day = week[dayOfWeek]
+
   // 코드 구현 시작 영역
 
   // …

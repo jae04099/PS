@@ -6,7 +6,13 @@ function answer(str) {
 
   // 코드 구현 시작 영역
 
-  // …
+  let newStr = str.toLowerCase()
+  spam_flag = newStr.match('advert')
+  if(spam_flag == null){
+    spam_flag = false
+  }else{
+    spam_flag = true
+  }
 
   // 코드 구현 종료 영역
 

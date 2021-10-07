@@ -6,8 +6,16 @@ function answer(arr) {
 
   // 코드 구현 시작 영역
 
-  // …
+  arr.sort()
 
+  let i = 0
+  while(i < arr.length){
+    if(arr[i] == arr[i + 1]){
+      arr.splice(i, 1)
+    }
+    i++
+  }
+  new_arr = arr
   // 코드 구현 종료 영역
 
   return new_arr;

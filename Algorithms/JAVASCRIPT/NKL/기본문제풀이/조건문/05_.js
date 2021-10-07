@@ -3,10 +3,23 @@
 /* user code */
 function answer(x_arr, y_arr) {
   let result = [];
-
+  let i = 0;
+  x_arr.sort()
+  y_arr.sort()
   // 코드 구현 시작 영역
+    if(x_arr[i] == x_arr[i + 1] && i == 0){
+      result.push(x_arr[2])
+    }else{
+      result.push(x_arr[0])
+    }
+    if(y_arr[i] == y_arr[i + 1] && i == 0){
+      result.push(y_arr[2])
+    }else{
+      result.push(y_arr[0])
+    }
+  
 
-  // …
+  
 
   // 코드 구현 종료 영역
 
