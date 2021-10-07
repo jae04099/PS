@@ -3,14 +3,17 @@
 /* user code */
 function answer(score) {
   let average = 0;
-
+  let sum = 0
   // 코드 구현 시작 영역
 
-  // …
+  for(let i = 0; i < score.length ; i++){
+    sum = sum + score[i]
+  }
+  average = sum / score.length
 
   // 코드 구현 종료 영역
 
-  return average;
+  return average.toFixed(2);
 }
 
 /* main code */

@@ -6,11 +6,17 @@ function answer(employee) {
 
   // 코드 구현 시작 영역
 
-  // …
+  // let maxNum = employee.sort()[employee.length - 1]
+  let maxNum = Math.max(...employee)
+  for(let i = 0 ; i < employee.length ; i++){
+    if(employee[i] == maxNum){
+      employee_id = i + 1;
+    }
+  }
 
   // 코드 구현 종료 영역
 
-  return average;
+  return employee_id;
 }
 
 /* main code */

@@ -6,8 +6,17 @@ function answer(x, y) {
 
   // 코드 구현 시작 영역
 
-  // …
+  let a = 0
+ 
+  if(x > y){
+    a = x
+    x = y
+    y = a
+  }
 
+  for(let i = x ; i <= y ; i++ ){
+    result.push(i)
+}
   // 코드 구현 종료 영역
 
   return result;
