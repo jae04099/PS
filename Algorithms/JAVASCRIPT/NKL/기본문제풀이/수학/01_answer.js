@@ -1,6 +1,7 @@
 /* 1. 등차수열의 항 찾기 */
 
 /* user code */
+// a: 첫번째 항, d: 차이, n: 찾는 수
 function answer(a, d, n) {
   let index = -1;
 

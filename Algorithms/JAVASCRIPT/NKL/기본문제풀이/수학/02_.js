@@ -10,7 +10,11 @@ function answer(a, b, c) {
 
   // 코드 구현 시작 영역
 
-  // …
+  if(num[2] - num[1] > num[1] - num[0]){
+    number = num[1] - num[0] + num[1]
+  }else{
+    number = num[2] - num[1] + num[0]
+  }
 
   // 코드 구현 종료 영역
 
