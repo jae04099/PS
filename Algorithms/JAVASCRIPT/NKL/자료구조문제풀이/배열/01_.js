@@ -6,8 +6,18 @@ function answer(nums) {
 
   // 코드 구현 시작 영역
 
-  // …
-
+  let min = Number.MAX_SAFE_INTEGER;
+  let location = 0;
+  for(let i = 0; i < nums.length ; i++){
+    if(min > nums[i]){
+      min = nums[i]
+    }
+  }
+  for(let i = 0 ; i < nums.length ; i++){
+    if(min == nums[i]){
+      result.push(i)
+    }
+  }
   // 코드 구현 종료 영역
 
   return result;

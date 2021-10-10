@@ -3,10 +3,25 @@
 /* user code */
 function answer(blocks) {
   let result = 0;
-
+  let sum = 0;
+  let aveNum = 0;
+  let lists = []
   // 코드 구현 시작 영역
 
-  // …
+  for(let i = 0; i < blocks.length ; i++){
+    sum += blocks[i]
+  }
+
+  aveNum = sum / blocks.length
+  for(let i = 0; i < blocks.length; i++){
+    if(parseFloat(blocks[i] - aveNum) > -1){
+      lists.push(parseFloat(blocks[i] - aveNum))
+    }
+  }
+
+  for(let i = 0 ; i < lists.length ; i++){
+    result += lists[i]
+  }
 
   // 코드 구현 종료 영역
 

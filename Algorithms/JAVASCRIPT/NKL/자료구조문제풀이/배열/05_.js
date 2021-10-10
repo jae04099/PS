@@ -2,12 +2,18 @@
 
 /* user code */
 function answer(height) {
-  let str = "";
+  let str = "\n";
 
   // 코드 구현 시작 영역
-
-  // …
-
+  for (let i = 0; i < height; i++) {
+    for (let j = 0; j < height - i - 1; j++) {
+      str += ' ';
+    }
+    for (let j = 0; j < i * 2 + 1; j++) {
+      str += '*'
+    }
+    str += '\n'
+  }
   // 코드 구현 종료 영역
 
   return str;

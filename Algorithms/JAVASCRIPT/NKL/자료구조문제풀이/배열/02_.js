@@ -6,8 +6,11 @@ function answer(chess) {
 
   // 코드 구현 시작 영역
 
-  // …
-
+  const lists = [1, 1, 2, 2, 2, 8];
+  
+  for(let i = 0; i < lists.length ; i++){
+    result.push(lists[i] - chess[i])
+  }
   // 코드 구현 종료 영역
 
   return result;

@@ -3,10 +3,14 @@
 /* user code */
 function answer(s, e) {
   let result = [];
+  let dics = {};
+  let sample = [];
 
   // 코드 구현 시작 영역
 
-  // …
+  for(let i = s; i <= e ; i++){
+    
+  }
 
   // 코드 구현 종료 영역
 

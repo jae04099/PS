@@ -6,7 +6,9 @@ function answer(nums) {
 
   // 코드 구현 시작 영역
 
-  // …
+  let sortedList = nums.sort((x, y) => x - y)
+  result.push(sortedList[sortedList.length - 1])
+  result.push(sortedList[sortedList.length - 2])
 
   // 코드 구현 종료 영역
 
