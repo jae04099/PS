@@ -11,7 +11,18 @@ function LinkedList() {
 function answer(ll) {
   // 코드 구현 시작 영역
 
-  // …
+  let current = ll.head,
+    prev = null,
+    next;
+
+  while (current != null){
+    next = current.next;
+    current.next = prev;
+    prev = current;
+    current = next;
+  }
+
+  ll.head = prev;
 
   // 코드 구현 종료 영역
 

@@ -12,8 +12,17 @@ function answer(nums) {
   let ll = new LinkedList();
 
   // 코드 구현 시작 영역
-
-  // …
+  let prev, current;
+  for(let i = 0; i < nums.length ; i++){
+    current = new Train(nums[i]);
+    if(i === 0){
+      ll.head = current;
+    }else{
+      prev.next = current;
+    }
+    prev = current;
+  }
+  
 
   // 코드 구현 종료 영역
 
