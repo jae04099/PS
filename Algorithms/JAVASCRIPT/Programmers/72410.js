@@ -1,5 +1,7 @@
-let new_id = "z-+.^.";
+let new_id = ".aa-.";
 let result = "z--";
+
+//'.aa-.' -> 'aa-' 
 
 // 자바스크립트는 -1을 못함
 // slice로 마지막꺼만  빼서
@@ -10,7 +12,8 @@ function solution(new_id) {
         sampleResult = sampleResult.split('')
         sampleResult.shift()
         sampleResult = sampleResult.join('')
-    } else if (sampleResult.split('')[sampleResult.split('').length - 1] === '.') {
+    }
+    if (sampleResult.split('')[sampleResult.split('').length - 1] === '.') {
         sampleResult = sampleResult.split('')
         sampleResult.pop()
         sampleResult = sampleResult.join('')
@@ -27,13 +30,11 @@ function solution(new_id) {
             sampleResult = sampleResult.join('')
         }
     }
-    if (sampleResult.length <= 2) {
-        while (sampleResult.length <= 3) {
-            let lastOne = sampleResult.split('')[sampleResult.split('').length - 1]
-            console.log(sampleResult)
-            sampleResult.split('').push(lastOne)
-            console.log(sampleResult)
-        }
+    const lastOne = sampleResult.split('')[sampleResult.split('').length - 1]
+    while (sampleResult.length < 3) {
+        sampleResult = sampleResult.toString().split('')
+        sampleResult.push(lastOne)
+        sampleResult = sampleResult.join('')
     }
 
     return sampleResult

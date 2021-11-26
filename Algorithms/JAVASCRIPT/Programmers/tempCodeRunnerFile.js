@@ -1,1 +1,1 @@
-        // sampleResult = (sampleResult.shift()).join()
+sampleResult = sampleResult.push(lastOne)
