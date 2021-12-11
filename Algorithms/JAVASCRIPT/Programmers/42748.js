@@ -4,7 +4,7 @@ function filter(arr, i, j, k) {
     if (i == j) {
         return arr[i - 1]
     }
-    // splice는 원본 배열을 변경한다.
+    // splice는 원본 배열을 변경한다. slice: 앞 인자, 뒤 갯수
     let temp = arr.slice(i - 1, j).sort((a, b) => a - b)[k - 1]
     return temp
 }
