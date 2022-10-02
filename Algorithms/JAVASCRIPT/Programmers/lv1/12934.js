@@ -3,7 +3,7 @@ function solution(n) {
         return -1;
     } else {
         let tmp = Math.sqrt(n);
-        return (tmp - 1) ** 2;
+        return (tmp + 1) * (tmp + 1);
     }
 }
 
